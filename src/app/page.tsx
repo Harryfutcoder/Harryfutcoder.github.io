@@ -44,8 +44,8 @@ export default function Home() {
           className="flex flex-col items-center text-center mt-10 mb-24"
         >
           {/* 头像区域：请将你的照片命名为 profile.jpg 放入 public 文件夹 */}
-          <motion.div variants={fadeInUp} className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gray-200 mb-8 overflow-hidden shadow-lg border-4 border-white">
-            <img src="/profile.jpg" alt="Dongsheng Hou" className="w-full h-full object-cover" />
+          <motion.div variants={fadeInUp} whileHover={{ scale: 1.05, rotate: 2 }} whileTap={{ scale: 0.95 }} className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gray-200 mb-8 overflow-hidden shadow-lg border-4 border-white cursor-pointer">
+            <img src="/profile.JPG" alt="Dongsheng Hou" className="w-full h-full object-cover" />
           </motion.div>
 
           <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
@@ -57,9 +57,11 @@ export default function Home() {
           </motion.div>
 
           <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-3 mt-2">
-            <span className="px-4 py-2 bg-white rounded-full text-sm font-semibold shadow-sm border border-gray-100">Mathematics</span>
-            <span className="px-4 py-2 bg-white rounded-full text-sm font-semibold shadow-sm border border-gray-100">Reinforcement Learning</span>
-            <span className="px-4 py-2 bg-white rounded-full text-sm font-semibold shadow-sm border border-gray-100">Software Engineering</span>
+            {["Mathematics", "Reinforcement Learning", "Software Engineering"].map((skill) => (
+              <motion.span key={skill} whileHover={{ scale: 1.1, backgroundColor: "#f3f4f6" }} whileTap={{ scale: 0.9 }} className="px-4 py-2 bg-white rounded-full text-sm font-semibold shadow-sm border border-gray-100 cursor-default">
+                {skill}
+              </motion.span>
+            ))}
           </motion.div>
         </motion.section>
 
@@ -123,7 +125,7 @@ export default function Home() {
 
           <div className="space-y-6">
             {/* Project 1 */}
-            <motion.div variants={fadeInUp} className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 group">
+            <motion.div variants={fadeInUp} whileHover={{ y: -8, scale: 1.01 }} transition={{ type: "spring", stiffness: 300 }} className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 hover:shadow-xl group">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <h3 className="text-2xl font-bold group-hover:text-blue-600 transition-colors">Context Engineering Game Theory Algorithms</h3>
                 <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-blue-50 text-blue-600 rounded-full text-sm font-semibold">
@@ -140,7 +142,7 @@ export default function Home() {
             </motion.div>
 
             {/* Project 2 */}
-            <motion.div variants={fadeInUp} className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 group">
+            <motion.div variants={fadeInUp} whileHover={{ y: -8, scale: 1.01 }} transition={{ type: "spring", stiffness: 300 }} className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 hover:shadow-xl group">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <h3 className="text-2xl font-bold group-hover:text-blue-600 transition-colors">MARL Algorithms for Financial Quantization</h3>
                 <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-purple-50 text-purple-600 rounded-full text-sm font-semibold">
@@ -156,7 +158,7 @@ export default function Home() {
             </motion.div>
 
             {/* Project 3 */}
-            <motion.div variants={fadeInUp} className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 group">
+            <motion.div variants={fadeInUp} whileHover={{ y: -8, scale: 1.01 }} transition={{ type: "spring", stiffness: 300 }} className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 hover:shadow-xl group">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <h3 className="text-2xl font-bold group-hover:text-blue-600 transition-colors">MARL Web Testing</h3>
                 <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-gray-100 text-gray-600 rounded-full text-sm font-semibold">
