@@ -1,8 +1,8 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion"; // 修改此处：引入 Variants
 
 // 动画预设（Apple 风格的丝滑过渡）
-const fadeInUp = {
+const fadeInUp: Variants = { // 修改此处：显式声明类型为 Variants
   hidden: { opacity: 0, y: 40 },
   visible: { 
     opacity: 1, 
@@ -11,7 +11,7 @@ const fadeInUp = {
   }
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = { // 修改此处：显式声明类型为 Variants
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
