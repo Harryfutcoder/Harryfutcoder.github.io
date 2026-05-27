@@ -51,7 +51,7 @@ export default function Home() {
       {/* Nav */}
       <nav className="fixed top-0 w-full z-50 bg-gray-50/80 dark:bg-black/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-white/10">
         <div className="max-w-[1000px] mx-auto px-6 h-14 flex items-center justify-between text-[13px] font-medium tracking-wide">
-          <span className="text-lg font-bold tracking-tight">Harry.</span>
+          <span className="text-lg font-bold tracking-tight">Dongsheng Hou</span>
           <div className="flex items-center gap-6">
             <div className="space-x-8 opacity-80 hidden sm:block">
               <a href="#about" className="hover:text-blue-500 transition">About</a>
@@ -244,17 +244,68 @@ export default function Home() {
               className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 group transition-shadow"
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">MARL Web Testing</h3>
-                <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 rounded-full text-sm font-semibold border border-gray-200 dark:border-white/10">
-                  Ongoing
+                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">SubWebTest</h3>
+                <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 rounded-full text-sm font-semibold border border-emerald-100 dark:border-emerald-500/20">
+                  Target: ICSE 2027
                 </span>
               </div>
               <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
-                Building a web testing framework based on financial pricing and game theory principles utilizing MARL.
+                Developing a submodular reinforcement learning framework for automated web testing, replacing additive rewards with history-dependent marginal gains to maximize unique state coverage. Proposes SUBPO policy optimization with constant-factor guarantees under bounded curvature and gradient variance reduction, and validates improved exploration efficiency and coverage stability across real web apps.
               </p>
-              <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
-                <span className="text-gray-800 dark:text-gray-300">Collaborator:</span> YuJia Fan
+            </motion.div>
+
+            {/* Project 4 */}
+            <motion.div
+              variants={springCard}
+              whileHover={{ y: -8, scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 group transition-shadow"
+            >
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">BP-CRL</h3>
+                <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full text-sm font-semibold border border-amber-100 dark:border-amber-500/20">
+                  Target: AAAI 2027
+                </span>
               </div>
+              <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
+                Tackling the tail blind spot in safe reinforcement learning. BP-CRL models epistemic uncertainty with an ensemble of critics and replaces high-variance CVaR estimation with a closed-form Bachelier formula for low-cost tail-risk shaping, suppressing catastrophic trajectories in navigation and continuous control tasks to deliver lightweight, stable tail protection.
+              </p>
+            </motion.div>
+
+            {/* Project 5 */}
+            <motion.div
+              variants={springCard}
+              whileHover={{ y: -8, scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 group transition-shadow"
+            >
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">ShapTCP</h3>
+                <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-full text-sm font-semibold border border-indigo-100 dark:border-indigo-500/20">
+                  Target: ISSTA 2027
+                </span>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
+                Developing game-theoretic test case prioritization methods for software testing. ShapTCP applies cooperative game theory with Shapley-value scarcity weighting to reduce redundant execution and surface rare fault-revealing tests earlier.
+              </p>
+            </motion.div>
+
+            {/* Project 6 */}
+            <motion.div
+              variants={springCard}
+              whileHover={{ y: -8, scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 group transition-shadow"
+            >
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">GuardTCP</h3>
+                <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-full text-sm font-semibold border border-indigo-100 dark:border-indigo-500/20">
+                  Target: ISSTA 2027
+                </span>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
+                Extending the direction with a non-cooperative robust optimization view, modeling test prioritization as an adversarial game against distribution shifts in CI environments.
+              </p>
             </motion.div>
           </div>
         </motion.section>
