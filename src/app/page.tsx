@@ -124,17 +124,21 @@ export default function Home() {
 
               <motion.div variants={fadeInUp} className="mt-6 grid gap-6">
                 <div className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2rem] p-6 shadow-sm border border-gray-100 dark:border-white/10">
-                  <h3 className="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Education Background</h3>
-                  <ul className="mt-4 space-y-3 text-gray-600 dark:text-gray-400">
-                    <li>
-                      <p className="font-semibold text-gray-900 dark:text-gray-100">Southern University of Science and Technology (SUSTech)</p>
-                      <p className="text-sm">Undergraduate • Class of 2028</p>
-                    </li>
-                    <li>
-                      <p className="font-semibold text-gray-900 dark:text-gray-100">Shenzhen Middle School</p>
-                      <p className="text-sm">High School • Class of 2024</p>
-                    </li>
-                  </ul>
+                  <h3 className="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">About Me</h3>
+                  <p className="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+                    I am Dongsheng Hou, currently an undergraduate student in the Department of Computer Science and
+                    Engineering at Southern University of Science and Technology (SUSTech). I am a member of the SQLab,
+                    Research Institute of Trustworthy Autonomous Systems (
+                    <a
+                      href="https://ritas.sustech.edu.cn/99"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      RITAS
+                    </a>
+                    ), under the supervision of Professor Yepang Liu.
+                  </p>
                 </div>
 
                 <div className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2rem] p-6 shadow-sm border border-gray-100 dark:border-white/10">
