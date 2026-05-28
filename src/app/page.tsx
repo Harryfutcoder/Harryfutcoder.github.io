@@ -93,7 +93,7 @@ export default function Home() {
             whileTap={{ scale: 0.95 }}
             className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gray-200 dark:bg-gray-800 mb-8 overflow-hidden shadow-lg border-4 border-white dark:border-white/20 cursor-pointer"
           >
-            <img src="https://github.com/user-attachments/assets/4f086b70-19a7-4c4a-a938-1932c888f88e" alt="Portrait photo of Dongsheng Hou" className="w-full h-full object-cover object-top" />
+            <img src="https://github.com/user-attachments/assets/4f086b70-19a7-4c4a-a938-1932c888f88e" alt="Portrait photo of Dongsheng Hou" className="w-full h-full object-cover object-[50%_60%]" />
           </motion.div>
 
           <motion.h1
