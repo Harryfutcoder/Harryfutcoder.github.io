@@ -104,7 +104,7 @@ export default function Home() {
               className="w-full max-w-[360px] md:w-80 lg:w-96 aspect-[3/4] rounded-[2rem] bg-gray-200 dark:bg-gray-800 overflow-hidden shadow-lg border-4 border-white dark:border-white/20"
             >
               <img
-                src="/profile.JPG"
+                src="https://github.com/user-attachments/assets/754e0681-f16d-441c-bd55-9abdb0d50bb2"
                 alt="Portrait photo of Dongsheng Hou"
                 className="w-full h-full object-contain"
               />
