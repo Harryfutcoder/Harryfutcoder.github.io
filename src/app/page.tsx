@@ -127,7 +127,7 @@ export default function Home() {
                   <h3 className="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">About Me</h3>
                   <p className="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                     I am Dongsheng Hou, currently an undergraduate student in the Department of Computer Science and
-                    Engineering at Southern University of Science and Technology (SUSTech). I am a member of the SQLab,
+                    Engineering at Southern University of Science and Technology (SUSTech). I am a member of the Software Quality Lab,
                     Research Institute of Trustworthy Autonomous Systems (
                     <a
                       href="https://ritas.sustech.edu.cn/99"
@@ -187,7 +187,7 @@ export default function Home() {
                 <p className="text-gray-500 dark:text-gray-400">High School • Class of 2024</p>
               </div>
               <div className="pt-4 border-t border-gray-100 dark:border-white/10">
-                <p className="font-semibold text-lg text-blue-600 dark:text-blue-400">SUSTech SQL Lab</p>
+                <p className="font-semibold text-lg text-blue-600 dark:text-blue-400">SUSTech Software Quality Lab</p>
                 <p className="text-gray-500 dark:text-gray-400">Current Researcher</p>
               </div>
             </div>
