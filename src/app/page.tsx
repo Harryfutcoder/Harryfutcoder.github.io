@@ -201,21 +201,58 @@ export default function Home() {
               className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 group transition-shadow"
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Context Engineering Game Theory Algorithms</h3>
+                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  <span className="text-3xl md:text-4xl font-black">S</span>HAPLEY
+                  <span className="text-3xl md:text-4xl font-black">C</span>ONTEXT
+                  <span className="text-3xl md:text-4xl font-black">P</span>RUNING: A Cooperative Game Perspective for Context Reranking and Pruning
+                </h3>
                 <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-semibold border border-blue-100 dark:border-blue-500/20">
-                  Target: NeurIPS 2026
+                  Submitted: NeurIPS 2026
                 </span>
               </div>
               <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
-                Developing advanced game theory algorithms specifically tailored for context engineering applications.
+                Framing context reranking and pruning as a cooperative game to surface high-value evidence with Shapley-style contributions.
               </p>
               <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
-                <span className="text-gray-800 dark:text-gray-300">Role:</span> Co-first Author <br/>
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> First Author <br/>
                 <span className="text-gray-800 dark:text-gray-300">Collaborators:</span> Yanqiao Chen, Yuhan Rui
+              </div>
+              <div className="mt-4">
+                <a href="https://arxiv.org" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                  arXiv (TBD)
+                </a>
               </div>
             </motion.div>
 
             {/* Project 2 */}
+            <motion.div
+              variants={springCard}
+              whileHover={{ y: -8, scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 group transition-shadow"
+            >
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  From Spatial to Spectral: An Efficient, Frequency-Guided Feature Representation Learner for Small Object Detection
+                </h3>
+                <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-sky-50 dark:bg-sky-500/10 text-sky-600 dark:text-sky-400 rounded-full text-sm font-semibold border border-sky-100 dark:border-sky-500/20">
+                  Submitted: NeurIPS 2026
+                </span>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
+                TL;DR: From Spatial to Spectral, we introduce a plug-and-play Decompose–Enhance–Reconstruct (DER) operator instantiated in the backbone/neck/head to preserve high-frequency cues for efficient small-object detection across diverse detectors.
+              </p>
+              <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> Second Author
+              </div>
+              <div className="mt-4">
+                <a href="https://arxiv.org" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                  arXiv (TBD)
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Project 3 */}
             <motion.div
               variants={springCard}
               whileHover={{ y: -8, scale: 1.01 }}
@@ -232,11 +269,17 @@ export default function Home() {
                 Investigating strategies and algorithms to overcome sparse reward challenges in reinforcement learning environments, enabling agents to learn effectively in settings where feedback is rare or delayed.
               </p>
               <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> First Author <br/>
                 <span className="text-gray-800 dark:text-gray-300">Collaborator:</span> Yanqiao Chen
+              </div>
+              <div className="mt-4">
+                <a href="https://arxiv.org" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                  arXiv (TBD)
+                </a>
               </div>
             </motion.div>
 
-            {/* Project 3 */}
+            {/* Project 4 */}
             <motion.div
               variants={springCard}
               whileHover={{ y: -8, scale: 1.01 }}
@@ -252,9 +295,17 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
                 Developing a submodular reinforcement learning framework for automated web testing, replacing additive rewards with history-dependent marginal gains to maximize unique state coverage. Proposes SUBPO policy optimization with constant-factor guarantees under bounded curvature and gradient variance reduction, and validates improved exploration efficiency and coverage stability across real web apps.
               </p>
+              <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> First Author
+              </div>
+              <div className="mt-4">
+                <a href="https://arxiv.org" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                  arXiv (TBD)
+                </a>
+              </div>
             </motion.div>
 
-            {/* Project 4 */}
+            {/* Project 5 */}
             <motion.div
               variants={springCard}
               whileHover={{ y: -8, scale: 1.01 }}
@@ -270,9 +321,17 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
                 Tackling the tail blind spot in safe reinforcement learning. BP-CRL models epistemic uncertainty with an ensemble of critics and replaces high-variance CVaR estimation with a closed-form Bachelier formula for low-cost tail-risk shaping, suppressing catastrophic trajectories in navigation and continuous control tasks to deliver lightweight, stable tail protection.
               </p>
+              <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> First Author
+              </div>
+              <div className="mt-4">
+                <a href="https://arxiv.org" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                  arXiv (TBD)
+                </a>
+              </div>
             </motion.div>
 
-            {/* Project 5 */}
+            {/* Project 6 */}
             <motion.div
               variants={springCard}
               whileHover={{ y: -8, scale: 1.01 }}
@@ -288,9 +347,17 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
                 Developing game-theoretic test case prioritization methods for software testing. ShapTCP applies cooperative game theory with Shapley-value scarcity weighting to reduce redundant execution and surface rare fault-revealing tests earlier.
               </p>
+              <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> First Author
+              </div>
+              <div className="mt-4">
+                <a href="https://arxiv.org" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                  arXiv (TBD)
+                </a>
+              </div>
             </motion.div>
 
-            {/* Project 6 */}
+            {/* Project 7 */}
             <motion.div
               variants={springCard}
               whileHover={{ y: -8, scale: 1.01 }}
@@ -306,6 +373,14 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
                 Extending the direction with a non-cooperative robust optimization view, modeling test prioritization as an adversarial game against distribution shifts in CI environments.
               </p>
+              <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> First Author
+              </div>
+              <div className="mt-4">
+                <a href="https://arxiv.org" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                  arXiv (TBD)
+                </a>
+              </div>
             </motion.div>
           </div>
         </motion.section>
@@ -409,6 +484,17 @@ export default function Home() {
             <a href="https://www.zhihu.com/people/harry-27-89" target="_blank" rel="noreferrer" className="px-6 py-3 bg-white dark:bg-white/5 backdrop-blur-xl rounded-full font-medium shadow-sm hover:shadow-md border border-gray-200 dark:border-white/10 hover:-translate-y-1 transition-all">
               Zhihu
             </a>
+          </div>
+          <div className="mt-8 flex flex-col items-center gap-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gray-400 dark:text-gray-500">Mail</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <a href="mailto:12410421@mail.sustech.edu.cn" className="px-5 py-2 bg-white dark:bg-white/5 backdrop-blur-xl rounded-full text-sm font-medium shadow-sm border border-gray-200 dark:border-white/10 hover:shadow-md hover:-translate-y-1 transition-all">
+                12410421@mail.sustech.edu.cn
+              </a>
+              <a href="mailto:harryhou174@gmail.com" className="px-5 py-2 bg-white dark:bg-white/5 backdrop-blur-xl rounded-full text-sm font-medium shadow-sm border border-gray-200 dark:border-white/10 hover:shadow-md hover:-translate-y-1 transition-all">
+                harryhou174@gmail.com
+              </a>
+            </div>
           </div>
         </motion.section>
 
