@@ -28,6 +28,15 @@ const springCard: Variants = {
   }
 };
 
+const researchInterests = [
+  "Reinforcement Learning",
+  "Game Theory",
+  "World Model",
+  "Software Engineering",
+  "Multi-Agent RL",
+  "Automated Testing"
+];
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(() => {
     if (typeof window === "undefined") return false;
@@ -85,40 +94,65 @@ export default function Home() {
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
-          className="flex flex-col items-center text-center mt-10 mb-24"
+          className="mt-10 mb-24"
         >
-          <motion.div
-            variants={fadeInUp}
-            whileHover={{ scale: 1.05, rotate: 2 }}
-            whileTap={{ scale: 0.95 }}
-            className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gray-200 dark:bg-gray-800 mb-8 overflow-hidden shadow-lg border-4 border-white dark:border-white/20 cursor-pointer"
-          >
-            <img src="https://github.com/user-attachments/assets/4f086b70-19a7-4c4a-a938-1932c888f88e" alt="Portrait photo of Dongsheng Hou" className="w-full h-full object-cover object-[50%_60%]" />
-          </motion.div>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+            <motion.div
+              variants={fadeInUp}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full max-w-[360px] md:w-80 lg:w-96 aspect-[3/4] rounded-[2rem] bg-gray-200 dark:bg-gray-800 overflow-hidden shadow-lg border-4 border-white dark:border-white/20"
+            >
+              <img
+                src="/profile.JPG"
+                alt="Portrait photo of Dongsheng Hou"
+                className="w-full h-full object-contain"
+              />
+            </motion.div>
 
-          <motion.h1
-            variants={fadeInUp}
-            className="text-5xl md:text-7xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-500 dark:from-white dark:to-gray-400"
-          >
-            Dongsheng Hou
-          </motion.h1>
-
-          <motion.div variants={fadeInUp} className="text-xl md:text-2xl text-gray-500 dark:text-gray-400 font-medium mb-6">
-            Shenzhen, China
-          </motion.div>
-
-          <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-3 mt-2">
-            {["Mathematics", "Reinforcement Learning", "Software Engineering"].map((skill) => (
-              <motion.span
-                key={skill}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="px-4 py-2 bg-white dark:bg-white/5 backdrop-blur-xl rounded-full text-sm font-semibold shadow-sm border border-gray-100 dark:border-white/10 cursor-default"
+            <div className="flex-1 text-center md:text-left">
+              <motion.h1
+                variants={fadeInUp}
+                className="text-5xl md:text-7xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-500 dark:from-white dark:to-gray-400"
               >
-                {skill}
-              </motion.span>
-            ))}
-          </motion.div>
+                Dongsheng Hou
+              </motion.h1>
+
+              <motion.div variants={fadeInUp} className="text-xl md:text-2xl text-gray-500 dark:text-gray-400 font-medium">
+                Shenzhen, China
+              </motion.div>
+
+              <motion.div variants={fadeInUp} className="mt-6 grid gap-6">
+                <div className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2rem] p-6 shadow-sm border border-gray-100 dark:border-white/10">
+                  <h3 className="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Education Background</h3>
+                  <ul className="mt-4 space-y-3 text-gray-600 dark:text-gray-400">
+                    <li>
+                      <p className="font-semibold text-gray-900 dark:text-gray-100">Southern University of Science and Technology (SUSTech)</p>
+                      <p className="text-sm">Undergraduate • Class of 2028</p>
+                    </li>
+                    <li>
+                      <p className="font-semibold text-gray-900 dark:text-gray-100">Shenzhen Middle School</p>
+                      <p className="text-sm">High School • Class of 2024</p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2rem] p-6 shadow-sm border border-gray-100 dark:border-white/10">
+                  <h3 className="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Research Interests</h3>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {researchInterests.map((interest) => (
+                      <span
+                        key={interest}
+                        className="px-3 py-1 rounded-full text-sm font-semibold bg-white dark:bg-white/5 border border-gray-100 dark:border-white/10"
+                      >
+                        {interest}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </motion.section>
 
         {/* About Section */}
@@ -167,7 +201,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tight mb-6">Beyond Code.</h2>
             </div>
             <div className="flex flex-wrap gap-2">
-              {['Basketball', 'Football', 'Guitar', 'Bass', 'Cello', 'Pop Music'].map(hobby => (
+              {['Basketball', 'Football', 'Guitar', 'Bass', 'Cello', 'Pop Music', 'Rap', 'R&B', 'Fitness', 'Travel'].map(hobby => (
                 <span key={hobby} className="px-3 py-1 bg-white/10 rounded-full text-sm backdrop-blur-md border border-white/10">
                   {hobby}
                 </span>
@@ -401,63 +435,18 @@ export default function Home() {
             Research Interests
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Current Focus */}
-            <motion.div
-              variants={springCard}
-              whileHover={{ y: -4, scale: 1.01 }}
-              transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="md:col-span-2 backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 transition-shadow"
-            >
-              <h3 className="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">Current Focus</h3>
-              <p className="text-xl font-semibold tracking-tight">
-                Applying Reinforcement Learning and Game Theory algorithms to Software Engineering and Software Testing.
-              </p>
-            </motion.div>
-
-            {/* Core Interests */}
-            <motion.div
-              variants={springCard}
-              whileHover={{ y: -4, scale: 1.01 }}
-              transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 transition-shadow"
-            >
-              <h3 className="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">Core Interests</h3>
-              <p className="text-xl font-semibold tracking-tight">Reinforcement Learning (RL)</p>
-            </motion.div>
-
-            {/* LLMs */}
-            <motion.div
-              variants={springCard}
-              whileHover={{ y: -4, scale: 1.01 }}
-              transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 transition-shadow"
-            >
-              <h3 className="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">LLMs</h3>
-              <p className="text-xl font-semibold tracking-tight">Multi-Agent Reinforcement Learning (MARL) applications on LLMs</p>
-            </motion.div>
-
-            {/* Finance */}
-            <motion.div
-              variants={springCard}
-              whileHover={{ y: -4, scale: 1.01 }}
-              transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 transition-shadow"
-            >
-              <h3 className="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">Finance</h3>
-              <p className="text-xl font-semibold tracking-tight">Financial Mathematics</p>
-            </motion.div>
-
-            {/* Theory */}
-            <motion.div
-              variants={springCard}
-              whileHover={{ y: -4, scale: 1.01 }}
-              transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 transition-shadow"
-            >
-              <h3 className="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">Theory</h3>
-              <p className="text-xl font-semibold tracking-tight">Applications of Game Theory in RL and MARL</p>
-            </motion.div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {researchInterests.map((interest) => (
+              <motion.div
+                key={interest}
+                variants={springCard}
+                whileHover={{ y: -4, scale: 1.01 }}
+                transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 transition-shadow"
+              >
+                <h3 className="text-lg font-semibold tracking-tight">{interest}</h3>
+              </motion.div>
+            ))}
           </div>
         </motion.section>
 
