@@ -244,7 +244,7 @@ export default function Home() {
                   <span className="text-3xl md:text-4xl font-black">C</span>ONTEXT
                   <span className="text-3xl md:text-4xl font-black">P</span>RUNING: A Cooperative Game Perspective for Context Reranking and Pruning
                 </h3>
-                <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-semibold border border-blue-100 dark:border-blue-500/20">
+                <span className="mt-2 md:mt-0 md:ml-6 inline-block shrink-0 whitespace-nowrap px-4 py-1.5 bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-semibold border border-blue-100 dark:border-blue-500/20">
                   Submitted: NeurIPS 2026
                 </span>
               </div>
@@ -273,7 +273,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   From Spatial to Spectral: An Efficient, Frequency-Guided Feature Representation Learner for Small Object Detection
                 </h3>
-                <span className="mt-2 md:mt-0 inline-block px-4 py-1.5 bg-sky-50 dark:bg-sky-500/10 text-sky-600 dark:text-sky-400 rounded-full text-sm font-semibold border border-sky-100 dark:border-sky-500/20">
+                <span className="mt-2 md:mt-0 md:ml-6 inline-block shrink-0 whitespace-nowrap px-4 py-1.5 bg-sky-50 dark:bg-sky-500/10 text-sky-600 dark:text-sky-400 rounded-full text-sm font-semibold border border-sky-100 dark:border-sky-500/20">
                   Submitted: NeurIPS 2026
                 </span>
               </div>
@@ -287,6 +287,121 @@ export default function Home() {
                 <a href="https://arxiv.org" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
                   arXiv (TBD)
                 </a>
+              </div>
+            </motion.div>
+
+            {/* Project 3 */}
+            <motion.div
+              variants={springCard}
+              whileHover={{ y: -8, scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 group transition-shadow"
+            >
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  BCPPO: Bachelier-Inspired Constrained Proximal Policy Optimization for Tail-Risk-Aware Safe Reinforcement Learning
+                </h3>
+                <span className="mt-2 md:mt-0 md:ml-6 inline-block shrink-0 whitespace-nowrap px-4 py-1.5 bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full text-sm font-semibold border border-amber-100 dark:border-amber-500/20">
+                  Under Review: AAAI 2027
+                </span>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
+                BCPPO combines constrained PPO with bootstrapped cost-critic disagreement and a Bachelier-inspired expected-excess penalty, encouraging caution around uncertain cost predictions while preserving standard critic learning and policy-only deployment.
+              </p>
+              <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> Co-First Author
+              </div>
+            </motion.div>
+
+            {/* Project 4 */}
+            <motion.div
+              variants={springCard}
+              whileHover={{ y: -8, scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 group transition-shadow"
+            >
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  WebCover: Marginal Coverage Gain-Guided Submodular RL for Efficient Web Testing
+                </h3>
+                <span className="mt-2 md:mt-0 md:ml-6 inline-block shrink-0 whitespace-nowrap px-4 py-1.5 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 rounded-full text-sm font-semibold border border-emerald-100 dark:border-emerald-500/20">
+                  Under Review: ICSE 2027
+                </span>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
+                WebCover frames automated web GUI testing as submodular reinforcement learning, rewarding marginal coverage gains and prioritizing untried actions to reduce redundant interactions and improve coverage within fixed testing budgets.
+              </p>
+              <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> Co-First Author
+              </div>
+            </motion.div>
+
+            {/* Project 5 */}
+            <motion.div
+              variants={springCard}
+              whileHover={{ y: -8, scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 group transition-shadow"
+            >
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  Reranker Value Is Composition-Dependent: Controlled Evaluation of RAG Cascades
+                </h3>
+                <span className="mt-2 md:mt-0 md:ml-6 inline-block shrink-0 whitespace-nowrap px-4 py-1.5 bg-violet-50 dark:bg-violet-500/10 text-violet-600 dark:text-violet-400 rounded-full text-sm font-semibold border border-violet-100 dark:border-violet-500/20">
+                  Under Review: ICLR 2027
+                </span>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
+                Introducing a controlled evidence-compute protocol for evaluating individual stages in multi-stage RAG cascades. Across multiple rerankers, readers, and datasets, semantic coarse stages improve efficiency and often quality, while downstream reranker value depends strongly on the surrounding composition.
+              </p>
+              <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> Co-First Author
+              </div>
+            </motion.div>
+
+            {/* Project 6 */}
+            <motion.div
+              variants={springCard}
+              whileHover={{ y: -8, scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 group transition-shadow"
+            >
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  PermVLA: Factorization Order as a Regularizer for VLA Learning
+                </h3>
+                <span className="mt-2 md:mt-0 md:ml-6 inline-block shrink-0 whitespace-nowrap px-4 py-1.5 bg-rose-50 dark:bg-rose-500/10 text-rose-600 dark:text-rose-400 rounded-full text-sm font-semibold border border-rose-100 dark:border-rose-500/20">
+                  Under Review: ICLR 2027
+                </span>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
+                PermVLA treats action-chunk factorization order as a regularizer for vision-language-action learning. Its causally anchored permutation objective creates multiple conditional prediction tasks from each demonstration, improving left-to-right training across LIBERO, LIBERO-Plus, and CALVIN.
+              </p>
+              <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> Co-First Author
+              </div>
+            </motion.div>
+
+            {/* Project 7 */}
+            <motion.div
+              variants={springCard}
+              whileHover={{ y: -8, scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="backdrop-blur-xl bg-white/70 dark:bg-white/5 rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-xl dark:hover:shadow-white/5 group transition-shadow"
+            >
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  Transport Before Factorization for Hard-Event Expected Gradients
+                </h3>
+                <span className="mt-2 md:mt-0 md:ml-6 inline-block shrink-0 whitespace-nowrap px-4 py-1.5 bg-cyan-50 dark:bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 rounded-full text-sm font-semibold border border-cyan-100 dark:border-cyan-500/20">
+                  Under Review: ICLR 2027
+                </span>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
+                Event-Factored Gradient Inference (EFGI) transports moving event cells before recovering factor structure. The method preserves boundary-aware gradients, exploits low-width computation when certified, and rejects unsupported inputs through a fail-closed interface.
+              </p>
+              <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                <span className="text-gray-800 dark:text-gray-300">Role:</span> Co-First Author
               </div>
             </motion.div>
 
