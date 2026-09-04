@@ -256,8 +256,8 @@ export default function Home() {
                 <span className="text-gray-800 dark:text-gray-300">Collaborators:</span> Yanqiao Chen, Yuhan Rui
               </div>
               <div className="mt-4">
-                <a href="https://arxiv.org" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
-                  arXiv (TBD)
+                <a href="https://arxiv.org/abs/2607.16209" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                  arXiv:2607.16209
                 </a>
               </div>
             </motion.div>
@@ -284,8 +284,8 @@ export default function Home() {
                 <span className="text-gray-800 dark:text-gray-300">Role:</span> Second Author
               </div>
               <div className="mt-4">
-                <a href="https://arxiv.org" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
-                  arXiv (TBD)
+                <a href="https://arxiv.org/abs/2606.23825" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                  arXiv:2606.23825
                 </a>
               </div>
             </motion.div>
@@ -310,6 +310,11 @@ export default function Home() {
               </p>
               <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
                 <span className="text-gray-800 dark:text-gray-300">Role:</span> Co-First Author
+              </div>
+              <div className="mt-4">
+                <a href="https://arxiv.org/abs/2608.30283" target="_blank" rel="noreferrer" className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                  arXiv:2608.30283
+                </a>
               </div>
             </motion.div>
 
