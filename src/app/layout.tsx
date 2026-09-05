@@ -13,8 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://harryfutcoder.github.io"),
   title: "Dongsheng Hou",
-  description: "Personal website of Dongsheng Hou.",
+  description:
+    "Dongsheng Hou's personal website and research portfolio in reinforcement learning, robot learning, information retrieval, and software engineering.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Dongsheng Hou",
+    description:
+      "Research portfolio in reinforcement learning, robot learning, information retrieval, and software engineering.",
+    url: "/",
+    siteName: "Dongsheng Hou",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

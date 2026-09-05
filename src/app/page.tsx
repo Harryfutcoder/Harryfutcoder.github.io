@@ -396,14 +396,14 @@ export default function Home() {
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <h3 className="text-2xl font-bold tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  Transport Before Factorization for Hard-Event Expected Gradients
+                  Boundary First, Factors Second: A Checked Interface for Expected-Value Gradients with Parametric Discontinuities
                 </h3>
                 <span className="mt-2 md:mt-0 md:ml-6 inline-block shrink-0 whitespace-nowrap px-4 py-1.5 bg-cyan-50 dark:bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 rounded-full text-sm font-semibold border border-cyan-100 dark:border-cyan-500/20">
                   Under Review: ICLR 2027
                 </span>
               </div>
               <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 leading-relaxed">
-                Event-Factored Gradient Inference (EFGI) transports moving event cells before recovering factor structure. The method preserves boundary-aware gradients, exploits low-width computation when certified, and rejects unsupported inputs through a fail-closed interface.
+                Expected-value Factor-Graph Interface (EFGI) is a checked, fail-closed handoff for expected-value gradients with parametric discontinuities. It resolves supported boundaries into an unexpanded fixed-domain expression, reconstructs sparse factors, verifies bucket-elimination replay, and only then applies automatic differentiation—preserving the declared finite quadrature&apos;s value and gradient under stated conditions without full-grid tensorization.
               </p>
               <div className="text-sm font-medium text-gray-400 dark:text-gray-500">
                 <span className="text-gray-800 dark:text-gray-300">Role:</span> Co-First Author
